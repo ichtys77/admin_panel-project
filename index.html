@@ -5,25 +5,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin panel</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="wrapper">
 
   <nav class="sidebar">
+
+    <div class="logo-box">Just do it</div>
+
     <div class="sidebar-inner">
-      Nav
-  </div>
+      <a class="active" href="#general">General</a>
+      <a href="#details">Details</a>
+      <a href="#links">Links</a>
+      <a href="#banners">Banners</a>
+      <a href="#data">Personal data</a>
+      <a href="#payout">Payout</a>
+      <a href="#postback">Postback</a>
+    </div>
 
   </nav>
 
   <div class="main">
-  	<header>Header</header>
+
+    <header></header>
 
     <main class="content">
-    <article class="box">Article</article>
-    <article class="box">Article</article>
+      <article class="box">
+        <div class="box-header">General statistics</div>
+        <div class="box-calendar"></div>
+        <div class="box-content"></div>
+      </article>
+
+      <article class="box">
+        <div class="box-header">Links</div>
+        <div class="box-calendar"></div>
+        <div class="box-content"></div>
+      </article>
     </main>
 
   </div>

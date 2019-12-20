@@ -1,6 +1,7 @@
 /* Colors */
 /* Fonts */
 /* Fonts sizes */
+/* Fonts weights */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -353,9 +354,12 @@ body {
       flex-direction: row;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   color: #a6a6a6;
 }
 
+/* The side navigation menu */
 .sidebar {
   height: 100%;
   width: 188px;
@@ -364,6 +368,36 @@ body {
   background: #333333;
   -ms-flex: 1;
       flex: 1;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #f58220;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.logo-box {
+  height: 20vh;
+  max-height: 60px;
+  padding: 16px;
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 300;
 }
 
 .main {
@@ -395,6 +429,13 @@ body {
   width: auto;
   height: 400px;
   margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box .box-header {
+  text-transform: uppercase;
+  border-bottom: 1px solid #E3E3E3;
+  padding-bottom: 16px;
 }
 
 header {
@@ -404,10 +445,10 @@ header {
   position: sticky;
   top: 0;
   max-height: 60px;
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid #E3E3E3;
 }
 
-header, article, nav {
+header, article {
   padding: 1em;
 }
 
