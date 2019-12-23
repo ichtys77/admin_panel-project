@@ -55,13 +55,6 @@ body {
   font-weight: $light-font-weight;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  margin-left: 188px;
-  flex: 5;
-}
-
 .content {
   background: $background-color;
   display: flex;
@@ -98,5 +91,13 @@ header {
 
 header, article {
   padding: 1em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 188px;
+  width: 100%;
+  //flex: 5;
 }
 
