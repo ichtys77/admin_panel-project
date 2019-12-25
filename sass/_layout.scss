@@ -33,16 +33,16 @@ body {
   font-weight: $light-font-weight;
   padding: 16px;
   text-decoration: none;
+}
 
-  .sidebar a.active {
-    background-color: $orange-color;
-    color: white;
-  }
+.sidebar a.active {
+  background-color: $orange-color;
+  color: white;
+}
 
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
 
 .logo-box {
