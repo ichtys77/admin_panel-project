@@ -1,0 +1,102 @@
+/* Global */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  margin: 0;
+  font-family: $roboto-font;
+  font-size: $header-font-size;
+  font-weight: $bold-font-weight;
+  color: $lightgrey-color;
+}
+
+/* The side navigation menu */
+.sidebar {
+  height: 100%;
+  width: 188px;
+  position: fixed;
+  z-index: 1;
+  background: $dark-color;
+  flex: 1;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: $lightgrey-color;
+  font-size: $text-font-size;
+  font-weight: $light-font-weight;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: $orange-color;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.logo-box {
+  height: 20vh;
+  max-height: 60px;
+  padding: 16px;
+  font-family: $logo-font;
+  font-size: 28px;
+  color: $light-color;
+  font-weight: $light-font-weight;
+}
+
+.content {
+  background: $background-color;
+  display: flex;
+  flex-direction: column ;
+}
+
+.content > article {
+  flex: 4;
+  min-height: 60vh;
+}
+
+.box {
+  background: $light-color;
+  width: auto;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+  .box-header {
+    text-transform: uppercase;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 16px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 188px;
+  width: 100%;
+  //flex: 5;
+
+  .main-header {
+    background: $light-color;
+    height: 20vh;
+    position: sticky;
+    top: 0;
+    max-height: 60px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .main-header, .box {
+    padding: 1em;
+  }
+}
