@@ -6,17 +6,19 @@
 @import "layout";
 @import "icons";
 
-/* Components */
-@import "./components/component__animated-hamburger";
-@import "./components/component__content-box";
-@import "./components/component__main-header";
-@import "./components/component__sidebar-header";
-@import "./components/component__sidebar-nav";
+/* Pages */
+@import "./pages/page__dashboard";
 
 /* Sections */
 @import "./sections/section__content";
 @import "./sections/section__header";
 @import "./sections/section__sidebar";
 
-/* Pages */
-@import "./pages/page__dashboard";
+/* Components */
+@import "./components/component__animated-hamburger";
+@import "./components/component__content-box";
+@import "./components/component__main-header";
+@import "./components/component__sidebar-header";
+@import "./components/component__sidebar-nav";
+@import "./components/component__buttons";
+@import "./components/component__typography";

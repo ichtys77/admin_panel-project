@@ -6,25 +6,6 @@ body {
   color: $lightgrey-color;
 }
 
-/* Typography */
-
-.typo__page-header {
-  font-size: $header-font-size;
-  font-weight: $medium-font-weight;
-  text-transform: uppercase;
-}
-
-.typo__section-header {
-  font-size: $header-font-size;
-  font-weight: $bold-font-weight;
-}
-
-.typo__text {
-  font-size: $text-font-size;
-  font-weight: $light-font-weight;
-  color: $dark-color;
-}
-
 /* Sections */
 
 .main {
