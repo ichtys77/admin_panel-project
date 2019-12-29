@@ -1,0 +1,28 @@
+.table {
+  border-collapse: collapse;
+}
+
+.table tr:hover {
+  background: $hover-color;
+}
+
+.table__with-link {
+  tr {
+    border-top: 1px solid $border-color;
+    height: 55px;
+  }
+
+  .table__col-name {
+    min-width: 300px;
+    padding-left: 10px;
+  }
+
+  .table__col-website {
+    min-width: 300px;
+  }
+
+  .table__col-icon {
+    min-width: 150px;
+    text-align: center;
+  }
+}

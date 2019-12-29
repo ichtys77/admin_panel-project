@@ -4662,27 +4662,27 @@ body {
   padding-top: 9px;
 }
 
-.btn-orange {
+.btn__orange {
   background-color: #f58220;
 }
 
-.btn-orange:hover {
+.btn__orange:hover {
   background-color: #ffa200;
 }
 
-.btn-grey {
+.btn__grey {
   background-color: #979797;
 }
 
-.btn-grey:hover {
+.btn__grey:hover {
   background-color: #bababa;
 }
 
-.btn-disabled {
+.btn__disabled {
   background-color: #e3e3e3;
 }
 
-.btn-disabled i {
+.btn__disabled i {
   font-size: 12px;
 }
 
@@ -4721,4 +4721,31 @@ body {
 
 .typo__link-sm {
   font-size: 13px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table tr:hover {
+  background: #F2F2F2;
+}
+
+.table__with-link tr {
+  border-top: 1px solid #E3E3E3;
+  height: 55px;
+}
+
+.table__with-link .table__col-name {
+  min-width: 300px;
+  padding-left: 10px;
+}
+
+.table__with-link .table__col-website {
+  min-width: 300px;
+}
+
+.table__with-link .table__col-icon {
+  min-width: 150px;
+  text-align: center;
 }

@@ -17,36 +17,26 @@
 
 }
 
-.btn-orange {
+.btn__orange {
   background-color: $btn2-color;
 }
 
-.btn-orange:hover {
+.btn__orange:hover {
   background-color: $btn2-hover-color;
 }
 
-.btn-grey {
+.btn__grey {
   background-color: $btn-color;
 }
 
-.btn-grey:hover {
+.btn__grey:hover {
   background-color: $btn-hover-color;
 }
 
-.btn-disabled {
+.btn__disabled {
   background-color: $btn-disabled-color;
 
   i {
     font-size: 12px;
   }
 }
-
-.btn-icon i {
-  font-size: 30px;
-  background: $color-main;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  color: $orange-color;
-  border-radius: 50%;
- }

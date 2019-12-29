@@ -16,7 +16,7 @@
 
   <div class="row">
 
-    <div class="col-3">
+    <div class="col-sm">
       <div class="typo__text">TEXTS</div>
       <br>
       <div class="typo__page-header">Page header</div>
@@ -28,7 +28,7 @@
     </div>
     <br>
 
-    <div class="col-1">
+    <div class="col-sm">
       <div class="typo__text">LINKS</div>
       <br>
       <div class="typo__link typo__link-lg">
@@ -36,30 +36,35 @@
       <br>
       <div class="typo__link typo__link-sm">
         <a href="#">small link</a></div>
-        <br>
-        <div class="typo__link typo__link-sm">
-          <a href="#"><i class="icon-show"></i></a></div>
+      <br>
+      <div class="typo__link typo__link-sm">
+        <a href="#"><i class="icon-show"></i></a></div>
     </div>
 
-    <div class="col-3">
+    <div class="col-sm">
       <div class="typo__text">BUTTONS</div>
       <br>
-      <a href=# class="btn btn-orange">Button</a>
+      <a href=# class="btn btn__orange">Button</a>
       <br>
-      <a href=# class="btn btn-grey">Button more</a>
+      <a href=# class="btn btn__grey">Button more</a>
       <br>
-      <a href=# class="btn btn-disabled"><i class="icon-links"></i>Disabled button</a>
+      <a href=# class="btn btn__disabled"><i class="icon-links"></i>Disabled button</a>
       <br>
     </div>
 
-    <div class="col-5">
+    <div class="col-sm">
       <div class="typo__text">TABLE with link</div>
       <br>
-      <table class="table-with-link">
+      <table class="table table__with-link">
         <tr>
           <td class="typo__section-header table__col-name">Your Site</td>
-          <td class="typo__link typo__link-lg table__col-website">http://www.yoursite.com</td>
-          <td class="table__col-icon">icon</td>
+          <td class="typo__link typo__link-lg table__col-website">
+            <a href="#">http://www.yoursite.com</a></td>
+          <td class="table__col-icon typo__link typo__link-sm">
+            <a href="#"><i class="icon-links"></i></a>
+            <a href="#"><i class="icon-trash"></i></a>
+
+          </td>
         </tr>
       </table>
     </div>
