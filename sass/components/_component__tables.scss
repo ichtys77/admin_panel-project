@@ -1,6 +1,11 @@
+.table__container {
+  display: flex;
+  overflow-x: auto;
+}
+
 .table {
   border-collapse: collapse;
-  height: 55px;
+  margin: auto;
 }
 
 .table tr:hover {
@@ -10,6 +15,7 @@
 .table__with-link {
   .table__row {
     border-top: 1px solid $border-color;
+    height: 55px;
   }
 
   .table__col-name {
@@ -30,6 +36,7 @@
 .list__with-one-digit {
   .list__row {
     border-bottom: 1px solid $border-color;
+    height: 55px;
   }
 
   .list__col-name {

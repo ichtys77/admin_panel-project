@@ -4644,6 +4644,12 @@ body {
   color: white;
 }
 
+.btn__container {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0 40px 0;
+}
+
 .btn {
   display: inline-block;
   border: 0;
@@ -4723,9 +4729,15 @@ body {
   font-size: 13px;
 }
 
+.table__container {
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+}
+
 .table {
   border-collapse: collapse;
-  height: 55px;
+  margin: auto;
 }
 
 .table tr:hover {
@@ -4734,6 +4746,7 @@ body {
 
 .table__with-link .table__row {
   border-top: 1px solid #E3E3E3;
+  height: 55px;
 }
 
 .table__with-link .table__col-name {
@@ -4752,6 +4765,7 @@ body {
 
 .list__with-one-digit .list__row {
   border-bottom: 1px solid #E3E3E3;
+  height: 55px;
 }
 
 .list__with-one-digit .list__col-name {
