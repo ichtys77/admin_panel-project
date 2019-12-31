@@ -4509,7 +4509,7 @@ body {
   padding: 0;
 }
 
-.component__sidebar {
+.section__sidebar {
   height: 100%;
   width: 200px;
   position: fixed;
@@ -4591,7 +4591,7 @@ body {
   margin: 0;
 }
 
-.logo-box {
+.sidebar-header .logo-box {
   max-height: 60px;
   padding: 16px;
   font-family: "Dancing Script", cursive;
@@ -4600,36 +4600,45 @@ body {
   font-weight: 300;
 }
 
-.btn-close {
+.sidebar-header .btn-close {
   text-align: center;
-  padding: 16px;
+  padding: 20px 0 0 0;
+  max-height: 60px;
 }
 
-.btn-close i {
+.sidebar-header .btn-close a {
+  text-decoration: none;
+  color: #a6a6a6;
+}
+
+.sidebar-header .btn-close i {
   font-size: 13px;
 }
 
-.btn-close:hover {
+.sidebar-header .btn-close:hover {
   background-color: #555;
+}
+
+.sidebar-header .btn-close:hover a {
   color: white;
 }
 
 /* Navigation */
-.component__sidebar a {
+.sidebar-nav a {
   display: block;
   color: #a6a6a6;
   font-size: 14px;
   font-weight: 300;
-  padding: 12px 0;
+  padding: 20px 0;
   text-decoration: none;
 }
 
-.component__sidebar a.active {
+.sidebar-nav a.active {
   background-color: #f58220;
   color: white;
 }
 
-.component__sidebar a:hover:not(.active) {
+.sidebar-nav a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
