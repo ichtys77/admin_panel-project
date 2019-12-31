@@ -18,12 +18,9 @@
   <nav class="component__sidebar">
     <div class="row sidebar-header">
       <div class="col-8 logo-box">Just do it</div>
-      <div class="col-sm animated-logo-icon" onclick="animateBar(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-
+      <div class="col-4 btn-close">
+        <a href="javascript:void(0)" onclick="closeNav()">
+          <i class="icon-close"></i></a></div>
     </div>
 
     <div class="sidebar-nav">
@@ -55,14 +52,35 @@
 
     <div class="content">
       <article class="box">
-        <div class="box-header typo__page-header">General statistics</div>
-        <div class="box-content"></div>
+        <div class="box__header typo__page-header">General statistics</div>
+        <div class="box__content">
+
+          <div class="list__container">
+            <table class="table list__with-one-digit">
+              <tr class="list__row">
+                <td class="typo__section-header list__col-name">Visit signups</td>
+                <td class="typo__text list__col-digit">124</td>
+                <td class="list__col-gutter"></td>
+                <td class="typo__section-header list__col-name">Net deposit</td>
+                <td class="typo__text list__col-digit">564</td>
+              </tr>
+              <tr class="list__row">
+                <td class="typo__section-header list__col-name">FTD</td>
+                <td class="typo__text list__col-digit">445</td>
+                <td class="list__col-gutter"></td>
+                <td class="typo__section-header list__col-name">Turn over</td>
+                <td class="typo__text list__col-digit">432</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
       </article>
 
       <article class="box">
-        <div class="box-header typo__page-header">Links</div>
+        <div class="box__header typo__page-header">Links</div>
 
-        <div class="box-content">
+        <div class="box__content">
 
           <div class="btn__container">
             <a href=# class="btn btn__orange">+ add new</a>

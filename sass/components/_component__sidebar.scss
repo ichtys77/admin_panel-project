@@ -1,0 +1,49 @@
+/* Header */
+
+.row {
+  margin: 0;
+}
+
+.logo-box {
+  max-height: 60px;
+  padding: 16px;
+  font-family: $logo-font;
+  font-size: 28px;
+  color: $light-color;
+  font-weight: $light-font-weight;
+}
+
+.btn-close {
+  text-align: center;
+  padding: 16px;
+
+  i {
+    font-size: 13px;
+  }
+}
+
+.btn-close:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Navigation */
+
+.component__sidebar a {
+  display: block;
+  color: $lightgrey-color;
+  font-size: $text-font-size;
+  font-weight: $light-font-weight;
+  padding: 12px 0;
+  text-decoration: none;
+}
+
+.component__sidebar a.active {
+  background-color: $orange-color;
+  color: white;
+}
+
+.component__sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}

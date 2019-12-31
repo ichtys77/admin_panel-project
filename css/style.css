@@ -4361,7 +4361,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: inherit;
-  line-height: 2;
+  line-height: 1;
   width: 3em;
   text-align: center;
   -webkit-font-smoothing: antialiased;
@@ -4523,32 +4523,6 @@ body {
 }
 
 /* Components */
-.animated-logo-icon {
-  display: inline-block;
-  cursor: pointer;
-  padding: 16px;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 20px;
-  height: 2px;
-  background-color: #ffffff;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
 .box {
   background: #ffffff;
   max-width: auto;
@@ -4557,7 +4531,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.box .box-header {
+.box .box__header {
   border-bottom: 1px solid #E3E3E3;
   padding-bottom: 16px;
 }
@@ -4565,7 +4539,7 @@ body {
 .navigation {
   list-style: none;
   height: auto;
-  min-height: 62px;
+  min-height: 60px;
   margin: 0;
   background: #ffffff;
   display: -ms-flexbox;
@@ -4577,13 +4551,13 @@ body {
 .navigation a {
   text-decoration: none;
   display: block;
-  color: #333333;
-  padding-top: 16px;
+  color: #9C9C9C;
+  padding: 16px 5px 0 5px;
 }
 
 .navigation a:hover {
   height: auto;
-  min-height: 62px;
+  min-height: 60px;
   background: #F2F2F2;
   padding-top: 16px;
 }
@@ -4612,6 +4586,7 @@ body {
   }
 }
 
+/* Header */
 .row {
   margin: 0;
 }
@@ -4625,6 +4600,21 @@ body {
   font-weight: 300;
 }
 
+.btn-close {
+  text-align: center;
+  padding: 16px;
+}
+
+.btn-close i {
+  font-size: 13px;
+}
+
+.btn-close:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Navigation */
 .component__sidebar a {
   display: block;
   color: #a6a6a6;
@@ -4692,6 +4682,14 @@ body {
   font-size: 12px;
 }
 
+.btn__square {
+  width: 40px;
+}
+
+.btn__square [class*="icon-"]:before {
+  width: 0;
+}
+
 /* Typography */
 .typo__page-header {
   font-size: 16px;
@@ -4740,11 +4738,11 @@ body {
   margin: auto;
 }
 
-.table tr:hover {
+.table__with-link tr:hover {
   background: #F2F2F2;
 }
 
-.table tr:hover .table__col-icon i {
+.table__with-link tr:hover .table__col-icon i {
   display: inline;
 }
 
@@ -4754,12 +4752,12 @@ body {
 }
 
 .table__with-link .table__col-name {
-  min-width: 300px;
+  min-width: 250px;
   padding-left: 10px;
 }
 
 .table__with-link .table__col-website {
-  min-width: 300px;
+  min-width: 250px;
 }
 
 .table__with-link .table__col-icon {
@@ -4771,16 +4769,27 @@ body {
   display: none;
 }
 
+.list__container {
+  overflow-x: auto;
+  padding: 20px 0;
+  min-height: 120px;
+}
+
 .list__with-one-digit .list__row {
   border-bottom: 1px solid #E3E3E3;
   height: 55px;
 }
 
 .list__with-one-digit .list__col-name {
-  min-width: 270px;
+  min-width: 280px;
 }
 
 .list__with-one-digit .list__col-digit {
-  min-width: 40px;
+  min-width: 30px;
   text-align: right;
+}
+
+.list__with-one-digit .list__col-gutter {
+  border-bottom: 1px solid #ffffff;
+  min-width: 30px;
 }
