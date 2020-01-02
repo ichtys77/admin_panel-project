@@ -5,12 +5,3 @@ body {
   font-family: $roboto-font;
   color: $lightgrey-color;
 }
-
-/* Sections */
-
-.main {
-  display: flex;
-  flex-direction: column;
-  margin-left: 200px;
-  //flex: 5;
-}

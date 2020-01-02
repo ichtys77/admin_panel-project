@@ -58,6 +58,16 @@
         <div class="box__header typo__page-header">General statistics</div>
         <div class="box__content">
 
+          <div class="cal__container">
+            <table class="table">
+              <tr class="cal__box typo__text">
+                <td class="cal__min-date">2.01.2020</td>
+                <td class="cal__max-date">3.01.2020</td>
+                <td class="cal__icon typo__link typo__link-sm"><a href="#"><i class="icon-calendar"></i></a></td>
+              </tr>
+            </table>
+          </div>
+
           <div class="list__container">
             <table class="table list__with-one-digit">
               <tr class="list__row">
@@ -75,6 +85,13 @@
                 <td class="typo__text list__col-digit">432</td>
               </tr>
             </table>
+          </div>
+
+          <div class="chart__container">
+            <div class="chart_header typo__section-header">Earnings chart</div>
+            <div class="chart_inner">
+            <canvas id="myChart" width="400" height="200"></canvas>
+          </div>
           </div>
 
         </div>
@@ -186,7 +203,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

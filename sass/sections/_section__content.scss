@@ -1,3 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  //flex: 5;
+}
+
+.main.sidebar-close {
+  margin-left: 0;
+}
+
 .content {
   background: $background-color;
   display: flex;
