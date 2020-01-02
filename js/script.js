@@ -1,8 +1,9 @@
 function toggleMenu(visible) {
-  document.querySelector('.section__sidebar').classList.toggle('show', visible);
+  document.querySelector('.section__sidebar').classList.toggle('close', visible);
 }
 
-document.querySelector('.btn-close').addEventListener('click', function (e) {
+document.querySelector('.close-sidebar').addEventListener('click', function (e) {
+  console.log('click: ', e);
   e.preventDefault();
   toggleMenu();
 });
