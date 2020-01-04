@@ -4696,18 +4696,25 @@ body {
 
 .btn__disabled {
   background-color: #e3e3e3;
+  padding-left: 10px;
 }
 
 .btn__disabled i {
   font-size: 12px;
 }
 
+.btn__disabled [class*="icon-"]:before {
+  width: 3em;
+}
+
 .btn__square {
   width: 40px;
+  padding: 10px 0;
 }
 
 .btn__square [class*="icon-"]:before {
-  width: 0;
+  width: auto;
+  text-align: center;
 }
 
 /* Typography */

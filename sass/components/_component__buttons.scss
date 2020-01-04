@@ -40,16 +40,24 @@
 
 .btn__disabled {
   background-color: $btn-disabled-color;
+  padding-left: 10px;
 
   i {
     font-size: 12px;
+  }
+
+  [class*="icon-"]:before {
+    width: 3em;
   }
 }
 
 .btn__square {
   width: 40px;
+  padding: 10px 0;
+
 
   [class*="icon-"]:before {
-    width: 0;
+    width: auto;
+    text-align: center;
   }
 }
