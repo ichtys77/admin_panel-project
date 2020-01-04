@@ -38,6 +38,10 @@
     i {
       display: none;
     }
+
+    i:before {
+      width: 3em;
+    }
   }
 }
 

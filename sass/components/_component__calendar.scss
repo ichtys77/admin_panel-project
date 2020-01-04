@@ -2,6 +2,10 @@
   display: flex;
   padding: 40px;
 
+  i:before {
+    width: 3em;
+  }
+
   .table {
     margin: auto;
     border-radius: 20px;

@@ -4353,7 +4353,7 @@ body {
   font-weight: normal;
   font-size: inherit;
   line-height: 1;
-  width: 3em;
+  width: auto;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4640,6 +4640,10 @@ body {
   text-decoration: none;
 }
 
+.sidebar-nav i:before {
+  width: 3em;
+}
+
 .sidebar-nav a.active {
   background-color: #f58220;
   color: white;
@@ -4785,6 +4789,10 @@ body {
   display: none;
 }
 
+.table__with-link .table__col-icon i:before {
+  width: 3em;
+}
+
 .list__container {
   overflow-x: auto;
   padding: 20px 0;
@@ -4816,6 +4824,10 @@ body {
   padding: 40px;
 }
 
+.cal__container i:before {
+  width: 3em;
+}
+
 .cal__container .table {
   margin: auto;
   border-radius: 20px;
@@ -4844,4 +4856,8 @@ body {
   margin: auto;
   max-width: 800px;
   padding: 40px 0;
+}
+
+.chart__container .chart__header {
+  padding: 20px 0;
 }
