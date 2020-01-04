@@ -4665,7 +4665,7 @@ body {
   border: 0;
   border-radius: 4px;
   color: #ffffff;
-  margin: 12px auto 0 auto;
+  margin: auto;
   width: auto;
   padding: 0 20px;
   height: 40px;
@@ -4828,7 +4828,9 @@ body {
 .cal__container {
   display: -ms-flexbox;
   display: flex;
-  padding: 40px;
+  margin: auto;
+  padding: 40px 0;
+  max-width: 300px;
 }
 
 .cal__container i:before {
@@ -4847,8 +4849,9 @@ body {
 
 .cal__container .cal__box .cal__min-date,
 .cal__container .cal__box .cal__max-date {
-  width: 120px;
-  padding-left: 15px;
+  width: 100px;
+  padding-left: 0;
+  text-align: center;
 }
 
 .cal__container .cal__box .cal__min-date {
