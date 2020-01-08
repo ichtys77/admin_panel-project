@@ -31,6 +31,28 @@
   }
 }
 
+/* Notification */
+
+.notification {
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 1px;
+}
+
+.notification .badge {
+  font-size: 12px;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  background: $orange-color;
+  color: white;
+}
+
 @media all and (max-width: 600px) {
   .section__sidebar {
     display: none;

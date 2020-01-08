@@ -4576,6 +4576,27 @@ body {
   width: 3em;
 }
 
+/* Notification */
+.notification {
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 1px;
+}
+
+.notification .badge {
+  font-size: 12px;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  background: #f58220;
+  color: white;
+}
+
 @media all and (max-width: 600px) {
   .section__sidebar {
     display: none;
@@ -4743,6 +4764,11 @@ body {
   color: #333333;
 }
 
+.typo__budget {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 /* Links */
 .typo__link a {
   text-decoration: none;
@@ -4751,6 +4777,16 @@ body {
 }
 
 .typo__link a:hover {
+  color: #f58220;
+}
+
+.typo__link {
+  text-decoration: none;
+  font-weight: 300;
+  color: #56819f;
+}
+
+.typo__link:hover {
   color: #f58220;
 }
 

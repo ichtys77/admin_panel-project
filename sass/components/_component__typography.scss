@@ -17,6 +17,11 @@
   color: $dark-color;
 }
 
+.typo__budget {
+  font-size: 20px;
+  font-weight: $medium-font-weight;
+}
+
 /* Links */
 
 .typo__link a {
@@ -26,6 +31,16 @@
 }
 
 .typo__link a:hover {
+  color: $orange-color;
+}
+
+.typo__link {
+  text-decoration: none;
+  font-weight: $light-font-weight;
+  color: $accent-color;
+}
+
+.typo__link:hover {
   color: $orange-color;
 }
 
