@@ -13,3 +13,11 @@
 .section__sidebar.close {
   display: none;
 }
+
+/* Mobile navigation */
+
+@media all and (max-width: 600px) {
+  .section__sidebar.open {
+    display: inline-block;
+  }
+}

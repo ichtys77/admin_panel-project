@@ -1,5 +1,5 @@
 function toggleMenu(visible) {
-  document.querySelector('.section__sidebar').classList.toggle('close', visible);
+  document.querySelector('.section__sidebar').classList.toggle('open', visible);
   document.querySelector('.main').classList.add('sidebar-close');
 
 }
@@ -8,6 +8,18 @@ document.querySelector('.close-sidebar').addEventListener('click', function (e) 
   // console.log('click: ', e);
   e.preventDefault();
   toggleMenu();
+});
+
+function toggleMobileMenu(visible) {
+  document.querySelector('.section__sidebar').classList.toggle('open', visible);
+  document.querySelector('.main').classList.add('sidebar-close');
+
+}
+
+document.querySelector('.mobile-bars').addEventListener('click', function (e) {
+  console.log('click: ', e);
+  e.preventDefault();
+  toggleMobileMenu();
 });
 
 // chart.js

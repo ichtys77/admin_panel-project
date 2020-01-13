@@ -13,28 +13,29 @@
     color: $light-color;
     font-weight: $light-font-weight;
   }
+}
 
-  .btn-close {
-    text-align: center;
-    padding: 20px 0 0 0;
-    max-height: 60px;
+.btn-close {
+  text-align: center;
+  padding: 20px 0 0 0;
+  max-height: 60px;
+  display: none;
 
-    a {
-      text-decoration: none;
-      color: $lightgrey-color;
-    }
-
-    i {
-      font-size: 13px;
-    }
+  a {
+    text-decoration: none;
+    color: $lightgrey-color;
   }
 
-  .btn-close:hover {
-    background-color: #555;
+  i {
+    font-size: 13px;
+  }
+}
 
-    a {
-      color: white;
-    }
+.btn-close:hover {
+  background-color: #555;
+
+  a {
+    color: white;
   }
 }
 
@@ -62,5 +63,11 @@
   a:hover:not(.active) {
     background-color: #555;
     color: white;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .btn-close {
+    display: inline;
   }
 }
