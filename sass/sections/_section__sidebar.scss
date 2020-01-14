@@ -8,6 +8,7 @@
   overflow: auto;
   padding-right: 0;
   padding-left: 0;
+  transition: 0.5s;
 }
 
 .section__sidebar.close {
@@ -19,5 +20,11 @@
 @media all and (max-width: 600px) {
   .section__sidebar.open {
     display: inline-block;
+    width: 100%;
+
+    .btn-close{
+      text-align: right;
+      padding-right: 25px;
+    }
   }
 }
